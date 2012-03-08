@@ -1,0 +1,13 @@
+<%#if params[:controller] == "dashboard" %>
+<ul id="portfolio_nav">
+	<li><%= link_to_unless_current("Logo", logo_portfolio_path ){link_to("Logo",logo_portfolio_path ,:class => "current")}%></li>
+        <span id="dot">.</span>
+	<li><%= link_to_unless_current("Print Design", print_design_portfolio_path ){link_to("Print Design",print_design_portfolio_path ,:class => "current")}%></li>
+        <span id="dot">.</span>
+	<li><%= link_to_unless_current("Packaging", packaging_portfolio_path ){link_to("Packaging",packaging_portfolio_path ,:class => "current")}%></li>
+        <span id="dot">.</span>
+	<li><%= link_to_unless_current("Website", web_design_portfolio_path ){link_to("Website",web_design_portfolio_path ,:class => "current")}%></li>
+        <span id="dot">.</span>
+	<li><%= link_to_unless_current("Stall / Interior", stall_interior_design_portfolio_path ){link_to("Stall / Interior",stall_interior_design_portfolio_path ,:class => "current")}%></li>
+</ul>
+<%# end %> 

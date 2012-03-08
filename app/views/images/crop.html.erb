@@ -1,0 +1,63 @@
+<% content_for :head do -%>
+	<%= stylesheet_link_tag "jquery.Jcrop" %>
+	<%= javascript_include_tag "jquery-1.3.2.min" ,"jquery.Jcrop.min" %>
+<script type="text/javascript" charset="utf-8">
+function showPreview(coords)
+{
+	var rx = <%= Image::AVATAR_SW %> / coords.w;
+	var ry = <%= Image::AVATAR_SH %> / coords.h;
+	var ratio = <%= @image.picture_geometry(:original).width %> / <%= @image.picture_geometry(:large).width %>; 
+
+	$('#preview').css({
+		width: Math.round(rx * <%= @image.picture_geometry(:large).width.to_i %>) + 'px',
+		height: Math.round(ry * <%= @image.picture_geometry(:large).height.to_i %>) + 'px',
+		marginLeft: '-' + Math.round(rx * coords.x) + 'px',
+		marginTop: '-' + Math.round(ry * coords.y) + 'px'
+	});
+  $('#crop_x').val(Math.round(coords.x * ratio));
+  $('#crop_y').val(Math.round(coords.y * ratio));
+  $('#crop_w').val(Math.round(coords.w * ratio));
+  $('#crop_h').val(Math.round(coords.h * ratio));
+}
+
+$(function() {
+  $('#cropbox').Jcrop({
+      onSelect: showPreview,
+      onChange: showPreview,
+      setSelect:   [ 0, 0, 500, 400 ],
+      aspectRatio:   <%= Image::AVATAR_SW %>/<%= Image::AVATAR_SH %>
+    });
+});
+
+</script>
+<% end %>
+<div style="position:absolute; margin:-20px 0 0 0"><%=h @image.name %></div>
+<table>
+<tr>
+	<td><%= image_tag @image.picture.url(:large), :id => 'cropbox' %></td>
+	<td valign="top">
+	<div style="position:absolute; width:<%= Image::AVATAR_SW %>px; height:<%= Image::AVATAR_SH %>px;overflow:hidden">
+	  <%= image_tag @image.picture.url(:large), :id => 'preview' %>
+	</div>
+	</td>
+</tr>
+<tr>
+	<td colspan="2">
+	<% form_for @image do |f| %>
+	  <%= f.hidden_field :crop_x, :id => 'crop_x' %>
+	  <%= f.hidden_field :crop_y, :id => 'crop_y' %>
+	  <%= f.hidden_field :crop_w, :id => 'crop_w' %>
+	  <%= f.hidden_field :crop_h, :id => 'crop_h' %>  
+	  <%= f.submit "Crop!" %> 
+          <%= f.submit("", :type => :image, :src => "/images/submit.jpg") %>
+          <%= image_tag "submit.jpg" %>
+          Submit
+	<% end %>
+</td>
+</tr>
+<tr>
+  <td>Sachin
+  </td>
+  <td></td>
+</tr>
+</table>

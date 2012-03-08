@@ -1,0 +1,10 @@
+<div>
+<% for image in @images %>
+	<div class="thumb-image">
+		<%= image_tag image.picture.url(:small) %>
+		<div class="image-link">
+		<a href="<%= image.picture.url%>" rel="lightbox[img]">&nbsp;<%#=image_tag  image.picture.url(:medium)%></a>
+		</div>
+	</div>	
+<% end %>
+</div>

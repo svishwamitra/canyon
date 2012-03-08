@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>Canyon</title>	
+	<%= stylesheet_link_tag "default" %>
+	<%= javascript_include_tag :defaults %>
+  	<!--<%#= javascript_include_merged :base %>-->  
+	<%= yield(:head) %>
+</head>
+
+<body>
+	<% if flash_message %><%= flash_message %><% end %>
+	<div id="site-wrapper">
+		<div id="admin_header">
+			<div id="global_links"><%= render :partial => 'shared/global_links' %></div>
+			<div id="logo">
+				<div><%= link_to image_tag("logo.jpg"),{:controller => "dashboard", :action => "index"} %></div>
+			</div>
+			<div id="top-navigation"><%= render :partial => 'admin/shared/tabs' %></div>
+		</div>
+		<div id="wrapper">
+			<div id="left-content">
+				<div id="admin"><%= render :partial => 'admin/shared/navigation' %><%#= yield_or_default(yield(:sidebar)) %></div>
+			</div>
+			<div id="right-content">				
+				<%= yield %>
+			</div>
+		</div>
+		<!--<div class="clear"></div>
+		<div class="shift"></div>-->
+	</div>
+</body>
+</html>

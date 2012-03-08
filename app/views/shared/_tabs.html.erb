@@ -1,0 +1,23 @@
+<ul>
+	<li>
+	<% if params[:controller] == "portfolio" %>
+		<%= link_to "Portfolio", logo_portfolio_path , :class => "current" %>
+	<% else %>
+		<%= link_to "Portfolio", logo_portfolio_path %>
+	<% end %>
+          <span>.</span>
+	<%#= link_to_unless_current("Portfolio", logo_portfolio_path){link_to("Portfolio",{logo_portfolio_path},:class => "current")}%></li>
+	<li><%= link_to_unless_current("Services", services_path ){link_to("Services", services_path ,:class => "current")} %></li>
+        <span>.</span>
+	<li><%= link_to_unless_current("About Us", about_us_path ){link_to("About Us", about_us_path ,:class => "current")} %></li>
+        <span>.</span>
+	<li><%= link_to_unless_current("Clients", clients_path ){link_to("Clients", clients_path ,:class => "current")} %></li>
+        <span>.</span>
+	<li>
+	<% if params[:action] == "contact_us" || params[:action] == "jobs" %>
+		<%= link_to "Contact Us", contact_us_path , :class => "current" %>
+	<% else %>
+		<%= link_to "Contact Us", contact_us_path %>
+	<% end %>
+	<%#= link_to_unless_current("Contact Us", contact_us_path ){link_to("Contact Us", contact_us_path ,:class => "current")}%></li>
+</ul>

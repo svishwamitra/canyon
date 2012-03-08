@@ -1,0 +1,6 @@
+<b><%=h @image.name %></b> (<%=h @image.image_type %>)
+<br />
+<%= image_tag @image.picture.url(:large) %>
+<%#= image_tag @image.picture.url(:small) %>
+<br /><br />
+<%= link_to "Back to All Images", images_path(:type => @image.image_type) %>

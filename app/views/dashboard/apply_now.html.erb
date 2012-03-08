@@ -1,0 +1,32 @@
+<div id="main_contact">
+<!-- <div id="contactimg">
+	<%= image_tag "contact.png" %>
+	<div class="clear"></div><br />
+	<b><%= link_to "jobs@canyon.in", jobs_path %></b><br />
+	<%= link_to "Freelance Copywriters", "#"%><br />
+	<%= link_to "Web and Graphic Designers", "#"%><br />
+	<%= link_to "Client Executives / Business Dev. Exe.", "#"%>
+</div> -->
+<div id="aboutdiv">
+	<div>
+	<% form_tag :action => "applyform" do %>
+	<table cellspacing="0" cellpadding="0">
+          <tr> <td> <span>Fill in the form to know more</span></td> </tr>
+		<tr>
+			<td>
+			<table cellspacing="0" cellpadding="0">
+				<tr> <td> <%= text_field "apply", "name",  :value => "Name", :onfocus => "if (this.value == 'Name') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Name';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "address",  :value => "Address", :onfocus => "if (this.value == 'Address') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Address';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "tel_mobile",  :value => "Tel / Mobile", :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>	
+				<tr> <td> <%= text_area "apply", "about",  :value => "About Me", :onfocus => "if (this.value == 'About Me') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'About Me';}"  %> </td> </tr>
+			</table>
+			</td>
+		<!-- <td> <%#= text_area "apply", "about",  :value => "About Me", :onfocus => "if (this.value == 'About Me') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'About Me';}"  %> </td> --> </tr>
+		<tr> <td id="submit" align="right"> <%= image_submit_tag("submit.jpg") %> </td> </tr>
+	</table>
+	<% end %>
+	</div>
+	<div style="clear:both"></div><br />
+</div>
+</div>

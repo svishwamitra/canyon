@@ -1,0 +1,39 @@
+<%# content_for :sidebar do -%>
+	<%#= render :partial => 'shared/navigation' %>
+<%# end %>
+<!-- <div>
+	<div class="thumb-image"><%#= image_tag "logo/logo1.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo2.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo3.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo4.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo5.png" %></div>
+	<div class="clear"></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo6.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo7.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo8.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo9.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo10.png" %></div>
+	<div class="clear"></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo11.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo12.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo13.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo14.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo15.png" %></div>
+	<div class="clear"></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo16.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo17.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo18.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo19.png" %></div>
+	<div class="thumb-image"><%#= image_tag "logo/logo20.png" %></div>
+</div> -->
+
+<div>
+<% for image in @images %>
+	<div class="thumb-image">
+		<%= image_tag image.picture.url(:small) %>
+		<div class="image-link">
+		<a href="<%= image.picture.url%>" rel="lightbox[img]">&nbsp;<%#=image_tag  image.picture.url(:medium)%></a>
+		</div>
+	</div>	
+<% end %>
+</div>

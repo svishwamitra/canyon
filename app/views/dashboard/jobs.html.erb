@@ -1,0 +1,20 @@
+<% content_for :sidebar do -%>
+	<%= render :partial => 'shared/contact_us_navigation' %>
+<% end %>
+<div id="contact">
+	<p>If you are filled with a positive approach towards work..</p>
+	<p>If you are a team player and possess sound strategic and planning skills..</p>
+	<p>If you possess exceptional talent in your field combined with valuable experience..</p>
+	<p>And most of all, if you are self motivated and driven to excel..</p>
+	<p>We want you on our team!</p>
+	<p>Canyon offers exciting career opportunities with fabulous growth prospects 
+	for talented and hard working individuals. We are constantly on the lookout for 
+	personnel in the designing, writing and marketing departments.</p>
+        <span>Apply Now!</span><br/>
+	<%= link_to "Careers@canyongda.com", apply_now_path %>
+        <br/><br/><br/>
+          <% unless logged_in? %>
+            <%= link_to "Sign In", login_url %>
+          <% end %>
+</div>
+

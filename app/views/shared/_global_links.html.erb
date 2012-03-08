@@ -1,0 +1,16 @@
+<% if logged_in? %>
+ 	<strong><%= current_user.login %></strong> | 
+	<!--<%# if admin? %>-->
+		<%= link_to "Dashboard", logo_portfolio_path %> |
+		<%= link_to "Manage Images", images_path %> |
+	<!--<%# else %>
+		<%#= link_to "Dashboard", root_url %>
+	<%# end %>-->
+	<%= link_to "My Account", profile_url(current_user) %> | 
+	<!--<% #if admin? -%><%#= link_to "Administration", images_path(:type => "logo") %>
+	<%#= link_to "Administration", admin_root_url %><%# end -%>-->
+	<%= link_to "Log out", logout_url, :method => :delete %>
+<!--<%# else %>
+	 <%#= link_to "Sign up", signup_url %> | 
+	%#= link_to "Log in", login_url %>-->
+<% end %>

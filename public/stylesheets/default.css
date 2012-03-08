@@ -1,0 +1,410 @@
+body{
+	margin:0;
+	padding:0;
+	font-size:12px;
+	font-family:arial;
+	background:white;
+	overflow:auto;}
+	input, select, input[type="file"], input[type="password"]{
+		font-size:12px;
+		font-family:arial;
+		border:1px solid #ccc}
+	input[type="text"], select{width:240px}
+	ul{
+		list-style:none;
+		margin:0;
+		padding:0}
+	a, a:visited{
+		text-decoration:none;
+		color:#000}
+	a:hover{text-decoration:underline}
+	a img{border:none}
+	.clear{clear:both}
+	#submitbutton input {background: url(../images/submit.png) no-repeat;height:29px; width:64px; line-height:29px; border:none; }
+	.help{background:#EFF7E2; border:1px solid #95C1AB; margin:0 0 5px 0; padding:2px 0 2px 0}
+	#notice{
+		position:absolute;
+		width:910px;
+		color:#fff;
+		font-weight:bold;
+		text-align:center;
+		margin-left: -455px;
+		left: 50%;}
+	.shift{
+		height:30px;
+		overflow:hidden}
+	#site-wrapper{
+		background: #e6e5e0;
+		position:absolute;
+		top: 50%;
+		left: 50%;
+		margin-left: -455px;
+		margin-top: -269px;
+		padding:0;
+		width:910px;
+		height:538px;
+		z-index:-5;
+		overflow:hidden;}
+            #site-wrapper #dashboard{
+                background: #287593;
+                width: 910px;
+                height: 538px;}
+            #site-wrapper #dashboard #bottom{width: 100%;}
+            #site-wrapper #dashboard #bottom img{width: 100%;}
+		#site-wrapper #header{
+			height:125px;
+			margin:0;
+			padding:0;
+			overflow:hidden;}
+		#site-wrapper #admin_header{
+			height:100px;
+			margin:0;
+			padding:0;
+			overflow:hidden;}
+			#site-wrapper #header #global_links, #site-wrapper #admin_header #global_links{
+				position:absolute;
+				margin:0 0 0 545px;
+				width:330px;
+				color:#193b17;
+				text-align:right}
+				#site-wrapper #header #global_links a, #site-wrapper #admin_header #global_links a{color:#284E27;}
+			#site-wrapper #header #logo,  #site-wrapper #admin_header #logo{
+				float:left;
+				margin:0;
+				padding:0}
+				#site-wrapper #header #logo div,  #site-wrapper #admin_header #logo div{
+					margin:42px 0 0 45px;
+					width:165px}
+		#site-wrapper #header-wrap{
+			margin:0;
+			padding:0;
+			overflow:hidden;}
+			#top-navigation{
+				float:right;
+				margin:0;
+				padding:0;
+				z-index:2}
+                        #top-navigation span{color: #be834b; font-size: 18px; margin: 0 5px 0 5px; position: relative; bottom: 3px;}
+				#top-navigation ul{
+					list-style:none;
+					margin:47px 50px 0 0}
+				#top-navigation ul li{
+					display:inline;}
+				#top-navigation ul li a{
+					font-size:14px;
+					color:#fff;
+					z-index:3;
+					/*font-weight:bold*/}
+					#top-navigation ul li a.current{color:#5e93a5}
+/* This top-nav is for application layout */
+                        #top-navigation-app{
+				float:right;
+				margin:0;
+				padding:0;
+				z-index:2}
+                        #top-navigation-app span{color: #be834b; font-size: 18px; margin: 0 5px 0 5px; position: relative; bottom: 3px;}
+				#top-navigation-app ul{
+					list-style:none;
+					margin:47px 50px 0 0}
+				#top-navigation-app ul li{
+					display:inline;}
+				#top-navigation-app ul li a{
+					font-size:14px;
+					color:#297493;
+					z-index:3;
+					/*font-weight:bold*/}
+					#top-navigation-app ul li a.current{color:#fff}
+			#wrapper{
+				width:100%;
+				margin:0;
+				padding:0;
+				background:#fff;
+				z-index:-4}
+                            
+				#wrapper #left-content{
+					float:left;
+					width:225px;
+					margin:0 10px 0 0px;
+					_margin: 0 0 0 0;
+					padding:0;
+					z-index:-3}
+					#wrapper #left-content h3{
+						font-size:14px;
+						color:#0d94d1}
+						#wrapper #left-content h3 span{margin:0 0 0 96px}
+					#wrapper #left-content ul, #wrapper #left-content #admin ul{
+						list-style:none;
+						float:right;
+						text-align:right;
+						margin:0 20px 0 0;}
+					#wrapper #left-content ul#contact_nav, #wrapper #left-content #admin ul#contact_nav{margin:0 20px 0 55px;}
+					#wrapper #left-content ul#portfolio_nav, #wrapper #left-content #admin ul#portfolio_nav{
+						text-align:right}
+						#wrapper #left-content ul li{
+							/*height:35px;
+							line-height:35px;*/
+							text-align:right;}
+                                                #left-content #contact_nav_jobs{float: left; text-align: left; margin: 10px 0 0 50px;}
+                                                #left-content #contact_nav_jobs ul li{text-align: left; height: 35px;}
+						#wrapper #left-content #admin ul li{
+							height:21px;
+							line-height:21px}
+                                                #wrapper #left-content #dot{color: #be834b; font-size: 18px; position: relative; bottom: 5px;}
+							#wrapper #left-content ul li a, #wrapper #left-content #admin ul li a{
+								font-size:12px;
+								color:#297493;
+								font-weight:bold}
+                                                        #wrapper #left-content #admin ul li span{font-weight: bold;}
+							#wrapper #left-content ul#portfolio_nav li a span,
+							#wrapper #left-content ul#contact_nav li a span{color:#119ae0; font-weight:bold}
+								#wrapper #left-content ul li a.current, #wrapper #left-content #admin ul li a.current{color:#297493}
+				#wrapper #right-content{
+					float:right;
+					text-align:left;
+					width:628px;
+					height:378px;
+					overflow:hidden;
+					margin:0 47px 0 0;
+					_margin: 0 37px 0 0;
+					padding:0;
+					z-index:1}
+					#wrapper #right-content .thumb-image{
+						width:113px;
+						margin:0;
+						padding:0;
+						overflow:hidden;
+						float:left;
+						padding:6px 10px 2px 9px;
+						_padding:3px 5px 0px 0px;}
+					#wrapper #right-content .admin-thumb-image{
+						width:113px;
+						margin:0;
+						padding:0;
+						overflow:hidden;
+						float:left;
+						padding:6px 5px 6px 4px;
+						_padding:3px 2px 3px 2px;}
+					#wrapper #right-content .thumb-image img{border:1px solid #cfd0ca;}
+					#wrapper #right-content .thumb-image .image-link{ margin:-12px 0 0 96px;}
+					#wrapper #right-content .admin-thumb-image .admin-image-link{margin:-18px 0 0 73px; background:#fff}
+					#wrapper #right-content .thumb-image .image-link a{
+						color:#fff;
+						height:14px;
+						width:14px;
+						padding:6px ;
+						background:url(../images/link.png) no-repeat}
+						.image-name{position:absolute; background:#141615; color:#fff; width:113px}
+					/*#wrapper #right-content .pagination {
+							background: #F1F1F1;
+							width:656px;
+							border: 1px solid #E5E5E5;
+							text-align: center;
+							margin:0 0 0 7px;
+							padding: 1em  0 1em 0 ; }
+							#wrapper #right-content .pagination a,
+							#wrapper #right-content .pagination span {padding: .2em .3em; }
+								#wrapper #right-content .pagination span.disabled {color: #AAA; }
+								#wrapper #right-content .pagination span.current {
+									font-weight: bold;
+									background: transparent url(../images/circle.gif) no-repeat 50% 50%; }
+							#wrapper #right-content .pagination a {
+								text-decoration: none;
+								color: black; }
+							#wrapper #right-content .pagination a:hover,
+							#wrapper #right-content .pagination a:focus {text-decoration: underline; }*/
+				#wrapper #content-left{
+					/*background: url(../images/index.png) no-repeat; */
+					float:left;
+					width:400px;
+					height:538px;
+					position:absolute;
+					padding:0;
+					margin:-63px 0 0 0;
+					color:#01a2e7}
+				#wrapper #content-left img{margin:0}
+				#wrapper img.bottom_image{margin:310px 0 0 0 ;}
+				#wrapper #content-right{
+					height:132px;
+					/*height:504px;*/
+					float:right;
+					width:392px;
+					/*width:440px;*/
+					padding:0 39px 0 0;
+					margin:0 0px 0 0;
+					background:#fff;
+					text-align:left}
+					#wrapper #content-right #logo{
+						position:absolute;
+						margin:160px 0 0 -15px;}
+					#wrapper #content-right #info{
+						position:absolute;
+						padding:0;
+						margin:365px 0 0 -15px;
+						color:#264425;
+						font-size:14px}
+				#wrapper #copyright{
+					position:absolute;
+					margin:300px 0 0 50px;
+					font-size:10px;
+					color:#0d94d1}
+.fieldWithErrors {
+	padding: 0px;
+	background-color: red;
+	display: table;}
+#errorExplanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;}
+	#errorExplanation h2 {
+		text-align: left;
+		font-weight: bold;
+		padding: 5px 5px 5px 15px;
+		font-size: 12px;
+		margin: -7px;
+		background-color: #c00;
+		color: #fff;}
+	#errorExplanation p {
+		color: #333;
+		margin-bottom: 0;
+		padding: 5px;}
+	#errorExplanation ul{margin:0 0 0 20px}
+		#errorExplanation ul li {
+			font-size: 12px;
+			list-style: square;}
+div.uploadStatus {margin: 5px;}
+div.progressBar {margin: 5px;}
+	div.progressBar div.border {
+		background-color: #fff;
+		border: 1px solid gray;
+		width: 100%;}
+	div.progressBar div.background {
+		background-color: #333;
+		height: 18px;
+		width: 0%;}
+
+#container{
+	margin:20px /*47px*/0 0 7px;
+	/* font-weight:bold*/}
+#contact{margin:8px 47px 0 60px; }
+	#contact a{
+		color:#287593;
+		font-size:13px;}
+        #contact span{
+		color:#287593;
+                font-weight: bold;
+		font-size:13px;}
+	#container p, #contact p{
+	line-height:21px;
+	margin:0 5px 11px 0px;
+	color:#297493;
+	font-size:13px;
+	text-align:justify;}
+.container{
+	margin:0 47px 0 7px;}
+.admin_thumb{
+	width:113px;
+	padding:0px 2px 0px 2px;
+	margin:2px 2px 5px 2px;
+	float:left;
+	background:#F1F1F1;
+	border: 1px solid #E5E5E5;}
+#imagesindex{position:absolute; margin-top:-7px; margin-bottom:0; margin-left:-6px}
+.pagination1 {
+	position:absolute;
+	margin-top:-48px;
+	margin-bottom:0px;
+	font-size:19px;
+	color:#2B4E24;
+	font-weight:bold;
+	width:675px;
+	z-index:-2}
+.pagination {
+	position:absolute;
+	margin-top:-45px;
+	margin-bottom:0px;
+	font-size:25px;
+	color:#2B4E24;
+	font-weight:bold;
+	width:675px;
+	z-index:-2}
+.pagination a{}
+a.next_page, div.next_page {width:15px; float:right; margin:0 36px 0 0; text-align:right}
+a.prev_page { margin:0px 0 0 -10px}
+div.prev_page{float:left; width:20px; margin:0px 0 0 -10px}
+a.next_page, a.prev_page,
+a.next_page:visited, a.prev_page:visited{color:#119ae0; text-decoration:none }
+.disabled prev_page, .disabled next_page{color:#2B4E24}
+
+#contact_name, #apply_name, #contact_address, #apply_address,
+#contact_tel_mobile, #apply_tel_mobile, #contact_email, #apply_email,
+#contact_enquiry, #apply_about{
+	height:21px;
+	line-height:21px;
+	border:1px solid #a7a7a7;
+	width:351px;
+	margin:4px 0;
+	padding: 2px 2px 0 4px;
+	color:#a7a7a7;
+	font-size:12px;
+	font-family:arial}
+#contact_enquiry { height:60px;}
+#contactimg{margin:0 0 0 60px; float:left}
+#contactdiv{width:389px; background:#d9d7ca; height:285px; position: absolute; left: 478px; top: 135px;}
+#contactdiv div{margin:18px; color: #287593;}
+#contactdiv table{width:100%; margin:0}
+#contactdiv #submit input{background: url(../images/submit.png) no-repeat;/*contactsubmit.png repeat-x ; height:25px;*/ height:29px; width:64px; line-height:29px; border:none }
+
+/* This is used for careers@canyongda.com link on ''contact us'' page */
+#careerlink a{position: absolute; left: 55px; top: 478px; color: #287593;}
+
+#main_contact, #main_contact a{color:#1a431a}
+
+#aboutdiv{
+	background:#e6e5e0;
+	margin:10px 0 0 165px;
+	padding: 0px 40px 145px 40px;
+	height:215px}
+#aboutdiv span{color: #287593; padding-left: 7px;}
+#aboutdiv div{margin:18px; }
+#aboutdiv table{width:50%; margin:0 auto;}
+#aboutdiv #submit input{background: url(../images/submit.jpg) no-repeat; height:29px; width:64px; line-height:29px; border:none; margin:0 5px 0 0; color: #a7a7a7; }
+
+#apply_name, #apply_address, #apply_tel_mobile, #apply_email,
+#apply_about{
+	height:21px;
+	line-height:21px;
+	border:1px solid #a7a7a7;
+	width:321px;
+	margin:4px 0;
+	padding:2px 2px 0px 4px;
+	color:#a7a7a7;
+	font-size:12px;
+	font-family:arial}
+#apply_about{ height:150px; }
+
+.container_services{font-size:12px; color:#297493;}
+.container_services #client_div{margin: 0 0 10px 0;}
+.services {
+	font-size:12px;
+	color:#297493;
+	font-weight:bold}
+.services span{color:#be834b; font-size: 16px; position: relative; bottom: 3px;}
+.container_services a, .container_services a:visited{font-size:13px}
+
+#splash {position:absolute; margin:-47px 0 0 0; _margin:85px 0 0 -394px}
+
+#login, #password{width:150px}
+
+div.scroller div.content { width: 10000px;}
+div.scroller { width:625px; padding:0; overflow: hidden; margin:0 0 0 0; float:left}
+div.scroller div.section { width:124px;	overflow: hidden; text-align:center; float:left; }
+
+a.original_image{
+  height:400px;
+  width:400px;
+}
+
+

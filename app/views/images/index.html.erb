@@ -1,0 +1,39 @@
+<% content_for :head do -%>	
+	<!--<%#= javascript_include_merged :base %>-->  
+<% end %>
+<!-- <table style="width:100%; margin:0; padding:0" cellspacing="0" cellpadding="0">
+<tr>
+	<td>
+	<%# form_tag images_path, :method=>:get do %>
+		Search By Image type <%#= select_tag :type,%{<option value="">Select a Image type</option>} + options_for_select( [["Logo", "Logo"], ["Print Design", "Print Design"], ["Packaging", "Packaging"], ["Web Design", "Web Design"], ["Stall/Interior", "Stall/Interior"]], params[:type]), :onchange => 'submit()'%>
+	<%# end %>
+	</td>
+	<td>
+		<%# if params[:type] %>Image Type :: <b><%#= params[:type] %></b><%# end %>	
+	</td>
+</tr>
+</table> -->
+<%# n = 0 %>
+<div style="height:378px; ">
+<% for image in @images %>
+	<div class="admin-thumb-image">
+		<div id="imagename_<%= image.id %>" class="image-name" style="display:none"><%=truncate image.name, :length => 24 %></div>
+		<%= link_to image_tag(image.picture.url(:small)), image_path(:id => image.id,:type => image.image_type), :onmouseover => "$('imagename_#{image.id}').show();", :onmouseout => "$('imagename_#{image.id}').hide();" %>
+		<div class="admin-image-link">
+			<%= link_to image_tag("edit.png"), edit_image_path(image), :title => "Edit"%>
+			<%= link_to(image_tag("del.png"), image_path(:id => image.id, :type => image.image_type), :confirm => 'Are you sure?', :method => :delete, :title => "Destroy" )%>
+		</div>
+	</div>
+<%# n += 1 %>
+<% end %>
+</div>
+<div style="clear:both"></div>
+<div id="imagesindex"><%= will_paginate @images, :page_links => false %></div>
+<!-- <div class="container"><%= link_to("New Image", new_image_path) %></div> -->
+	<!-- <div class="admin_thumb">
+		<%# unless params[:type] %><b><%#= image.image_type %></b><%# end %>
+		<%#= link_to image_tag(image.picture.url(:small)), image_path(:id => image.id,:type => image.image_type) %>
+		<div style="center"><%#=truncate image.name, :length => 24 %><%#= link_to image.name, image %></div>
+		<%#= link_to("Edit", edit_image_path(image)) %>&nbsp;&nbsp;/&nbsp;
+		<%#= link_to("Destroy", image_path(image), :confirm => 'Are you sure?', :method => :delete) %>
+	</div> -->

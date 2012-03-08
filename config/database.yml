@@ -1,0 +1,19 @@
+# MySQL.  Versions 4.1 and 5.0 are recommended.
+#
+#
+# Be sure to use new-style password hashing:
+#   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
+development:
+  adapter: mysql
+  encoding: utf8
+  database: canyon
+  username: root
+  password: livia
+  #socket: /tmp/mysql.sock
+
+production:
+  adapter: mysql
+  encoding: utf8
+  database: canyon
+  username: root
+  password:

@@ -1,0 +1,35 @@
+<!-- <div class="help"></div> -->
+<table>
+	<% if params[:id] %>
+		<tr><td colspan="2"><%= image_tag(@image.picture.url(:small)) %></td></tr>
+		<tr><td colspan="2">&nbsp;</td></tr>
+	<% end %>
+	<% form_for @image , :html =>{:multipart => true} do |f| %>
+		<%= f.error_messages %>
+		<tr>
+			<td>Image Name</td>
+			<td><%= f.text_field :name %></td>
+		</tr>
+		<tr>
+			<td>Image Type</td>
+			<td><%= f.select("image_type",[ 
+				["logo","logo"],
+				["print_design", "print_design"],
+				["packaging", "packaging"],
+				["web_design", "web_design"],
+				["stall_interior_design", "stall_interior_design"]
+				],{:prompt => "Please Select"})%>
+			</td>
+		</tr>	
+		<tr>
+			<td>Upload Image</td>
+			<td><%= f.file_field :picture %></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td id="submitbutton"><%= submit_tag 'Submit' %></td>		
+		</tr>
+	<% end %>
+</table>
+<br /><br />
+&nbsp;&nbsp;<%= link_to "Back to All Images", images_path(:type => @image.image_type) if params[:id]%>

@@ -1,0 +1,23 @@
+<table style="color: #274F25; width:80%; margin:0 0 0 10px">
+<tr>
+	<td colspan="2"><h3>Account details</h3></td>
+</tr>
+<tr>
+	<td style="width:20%">Login</td>
+	<td><%=h(@user.login)%></td>
+</tr>
+<tr>
+	<td>Email</td>
+	<td><%=h(@user.email)%></td>
+</tr>
+<tr>
+	<td>Password </td>
+	<td>******** &nbsp;&nbsp;<%= link_to "Change Password",  edit_password_user_url(@user)%></td>
+</tr>
+<tr>
+	<td></td>
+	<td></td>
+</tr>
+</table>
+<%#= cell "Account created", @user.created_at.to_s(:long) %>
+<%#= cell "Last updated", @user.updated_at.to_s(:long) %>

@@ -1,0 +1,14 @@
+<b>Application form filed by</b>
+<table cellspacing="0" cellpadding="0" style="width:450px;">
+	<tr> <td colspan="2"> &nbsp; </td> </tr>
+	<tr> <td style="width:25%"> Name : </td>  <td> <b><%=h @name %></b> </td> </tr>
+	<tr> <td colspan="2"> <hr /> </td> </tr>
+	<tr> <td colspan="2"> <b>Contact Details</b> </td> </tr>
+	<tr> <td> Address: </td>  <td valign="top"> <%=h @address %> </td> </tr>
+	<tr> <td> Tel/Mobile No.: </td>  <td> <%= @tel_mobile %> </td> </tr>
+	<tr> <td colspan="2"> <hr /> </td> </tr>
+	<tr> <td> E-Mail: </td>  <td> <%= @from %> </td> </tr>
+	<tr> <td colspan="2"> <hr /> </td> </tr>
+	<tr> <td colspan="2"> <b>Enquiry</b> </td> </tr>
+	<tr> <td colspan="2"> <%=simple_format @about %> </td> </tr>
+</table>
