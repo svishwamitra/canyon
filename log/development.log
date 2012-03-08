@@ -11989,3 +11989,4 @@ Rendered admin/shared/_tabs (0.1ms)
 Rendered admin/shared/_navigation (1.6ms)
 Completed in 1473ms (View: 46, DB: 67) | 200 OK [http://localhost/images]
 DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /home/srikanth/applications/canyon/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
+DEPRECATION WARNING: Kernel#returning has been deprecated in favor of Object#tap. (called from enable_activerecord at /home/srikanth/applications/canyon/vendor/plugins/will_paginate/lib/will_paginate.rb:39)
