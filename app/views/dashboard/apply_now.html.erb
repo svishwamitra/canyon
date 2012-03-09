@@ -15,11 +15,17 @@
 		<tr>
 			<td>
 			<table cellspacing="0" cellpadding="0">
-				<tr> <td> <%= text_field "apply", "name",  :value => "Name", :onfocus => "if (this.value == 'Name') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Name';}"  %> </td> </tr>
-				<tr> <td> <%= text_field "apply", "address",  :value => "Address", :onfocus => "if (this.value == 'Address') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Address';}"  %> </td> </tr>
-				<tr> <td> <%= text_field "apply", "tel_mobile",  :value => "Tel / Mobile", :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
-				<tr> <td> <%= text_field "apply", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>	
-				<tr> <td> <%= text_area "apply", "about",  :value => "About Me", :onfocus => "if (this.value == 'About Me') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'About Me';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "name",  :value => "Name", :onfocus => "if (this.value == 'Name') {this.value = '';}", 
+				                                           :onblur => "if (this.value == '') {this.value = 'Name';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "address",  :value => "Address", :onfocus => "if (this.value == 'Address') {this.value = '';}", 
+				                                              :onblur => "if (this.value == '') {this.value = 'Address';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "tel_mobile",  :value => "Tel / Mobile", 
+				                                                 :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", 
+				                                                 :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
+				<tr> <td> <%= text_field "apply", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", 
+				                                            :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>	
+				<tr> <td> <%= text_area "apply", "about",  :value => "About Me", :onfocus => "if (this.value == 'About Me') {this.value = '';}", 
+				                                           :onblur => "if (this.value == '') {this.value = 'About Me';}"  %> </td> </tr>
 			</table>
 			</td>
 		<!-- <td> <%#= text_area "apply", "about",  :value => "About Me", :onfocus => "if (this.value == 'About Me') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'About Me';}"  %> </td> --> </tr>

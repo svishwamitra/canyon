@@ -1,6 +1,7 @@
 # See how all your routes lay out with "rake routes"
 ActionController::Routing::Routes.draw do |map|
-  map.resources :portfolio, :collection => { :logo => :get, :print_design => :get, :packaging => :get, :web_design => :get, :stall_interior_design => :get}
+  map.resources :portfolio, :collection => { :logo => :get, :print_design => :get, :packaging => :get, 
+                :web_design => :get, :stall_interior_design => :get}
   map.resources :images
   map.about_us    '/about_us',   :controller => 'dashboard',   :action => 'about_us'  
   map.contact_us  '/contact_us', :controller => 'dashboard',   :action => 'contact_us'  
