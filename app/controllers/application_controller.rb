@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery # :secret => '9fe6825f97cc334d88925fde5c4808a8'
 
   def admin?
-    admin_id = Role.find_by_name('admin', :limit=>1)
+    admin_id = Role.find_by_name('admin').id
     if logged_in? && current_user.role_id.to_i == admin_id.to_i
       true
     else
