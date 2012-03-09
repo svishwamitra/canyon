@@ -1,10 +1,10 @@
 # Email settings
-ActionMailer::Base.delivery_method = :smtp
-ActionMailer::Base.smtp_settings = {
-  :address        => 'smtp.arvindsingh.in',
-  :port           => 25,
-  :domain         => 'arvindsingh.in',
-  :authentication => :login,
-  :user_name      => 'info@arvindsingh.in',
-  :password       => 'evershine'
- }
+ActionMailer::Base.delivery_method = :sendmail
+#ActionMailer::Base.smtp_settings = {
+#  :address        => 'lvmail01',
+#  :port           => 25,
+#  :domain         => 'arvindsingh.in',
+#  :authentication => :login,
+#  :user_name      => 'info@arvindsingh.in',
+#  :password       => 'evershine'
+# }
