@@ -8,7 +8,7 @@ development:
   encoding: utf8
   database: canyon
   username: root
-  password: livia
+  password: 
   #socket: /tmp/mysql.sock
 
 production:
