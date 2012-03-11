@@ -2,4 +2,5 @@ rails --version 2.3.14
 configatron
 paperclip
 aws-s3
+aws-sdk
 
