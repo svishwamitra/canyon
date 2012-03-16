@@ -84,14 +84,14 @@ body{
 				margin:0;
 				padding:0;
 				z-index:2}
-                        #top-navigation span{color: #be834b; font-size: 18px; margin: 0 5px 0 5px; position: relative; bottom: 3px;}
+                        #top-navigation span{color: #be834b; font-size: 18px; margin: 0 3px 0 3px; position: relative; bottom: 3px;}
 				#top-navigation ul{
 					list-style:none;
 					margin:47px 50px 0 0}
 				#top-navigation ul li{
 					display:inline;}
 				#top-navigation ul li a{
-					font-size:14px;
+					font-size:11px;
 					color:#fff;
 					z-index:3;
 					/*font-weight:bold*/}
@@ -102,14 +102,14 @@ body{
 				margin:0;
 				padding:0;
 				z-index:2}
-                        #top-navigation-app span{color: #be834b; font-size: 18px; margin: 0 5px 0 5px; position: relative; bottom: 3px;}
+                        #top-navigation-app span{color: #be834b; font-size: 18px; margin: 0 3px 0 3px; position: relative; bottom: 3px;}
 				#top-navigation-app ul{
 					list-style:none;
 					margin:47px 50px 0 0}
 				#top-navigation-app ul li{
 					display:inline;}
 				#top-navigation-app ul li a{
-					font-size:14px;
+					font-size:11px;
 					color:#297493;
 					z-index:3;
 					/*font-weight:bold*/}
@@ -352,8 +352,9 @@ a.next_page:visited, a.prev_page:visited{color:#119ae0; text-decoration:none }
 	font-family:arial}
 #contact_enquiry { height:60px;}
 #contactimg{margin:0 0 0 60px; float:left}
-#contactdiv{width:389px; background:#d9d7ca; height:285px; position: absolute; left: 478px; top: 135px;}
+#contactdiv{width:389px; background:#d9d7ca; height:380px; position: absolute; left: 469px; top: 120px;}
 #contactdiv div{margin:18px; color: #287593;}
+#contactdiv #contactdivlogo{width: 165px}
 #contactdiv table{width:100%; margin:0}
 #contactdiv #submit input{background: url(../images/submit.png) no-repeat;/*contactsubmit.png repeat-x ; height:25px;*/ height:29px; width:64px; line-height:29px; border:none }
 

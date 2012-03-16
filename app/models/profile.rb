@@ -12,4 +12,5 @@ class Profile < ActiveRecord::Base
   def public_attributes
     self.attribute_names.select{|a| !Profile::PRIVATE_FIELDS.include?(a)}
   end
+  
 end

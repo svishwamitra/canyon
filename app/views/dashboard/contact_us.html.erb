@@ -1,18 +1,25 @@
   
 <div id="bottom">
   <div id="contactdiv">
-	<div style="">&nbsp;&nbsp;Fill in the form to know more
-	<% form_tag :action => "contactform" do %>
-	<table cellspacing="0" cellpadding="0">
-		<tr> <td> <%= text_field "contact", "name",  :value => "Name", :onfocus => "if (this.value == 'Name') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Name';}"  %> </td> </tr>
-		<tr> <td> <%= text_field "contact", "address",  :value => "Address", :onfocus => "if (this.value == 'Address') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Address';}"  %> </td> </tr>
-		<tr> <td> <%= text_field "contact", "tel_mobile",  :value => "Tel / Mobile", :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
-		<tr> <td> <%= text_field "contact", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>
-		<tr> <td> <%= text_area "contact", "enquiry",  :value => "Enquiry", :onfocus => "if (this.value == 'Enquiry') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Enquiry';}"  %> </td> </tr>
-                <tr> <td id="submit" align="right"> <%= image_submit_tag('submit.jpg') %></td> </tr>
-	</table>
-	<% end %>
-	</div>
+	  <div style="">&nbsp;&nbsp;Fill in the form to know more
+	    <% form_tag :action => "contactform" do %>
+	      <table cellspacing="0" cellpadding="0">
+		      <tr> <td> <%= text_field "contact", "name",  :value => "Name", :onfocus => "if (this.value == 'Name') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Name';}"  %> </td> </tr>
+		      <tr> <td> <%= text_field "contact", "address",  :value => "Address", :onfocus => "if (this.value == 'Address') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Address';}"  %> </td> </tr>
+		      <tr> <td> <%= text_field "contact", "tel_mobile",  :value => "Tel / Mobile", :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
+		      <tr> <td> <%= text_field "contact", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>
+		      <tr> <td> <%= text_area "contact", "enquiry",  :value => "Enquiry", :onfocus => "if (this.value == 'Enquiry') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Enquiry';}"  %> </td> </tr>
+                      <tr> <td id="submit" align="right"> <%= image_submit_tag('submit.jpg') %></td> </tr>
+	      </table>
+	    <% end %>
+	  </div>
+	  <div id="contactdivlogo">
+	    <%= image_tag "contactdivlogo.jpg" %>
+	  </div>  
+	  <div>
+	    601A, Shalimar Morya Park, opp. Infinity Mall Link Rd, <br/>
+	    Andheri (W), Mum - 53 Tel : 8108636801 Mobile 9892374537
+	  </div>
   </div>
   <div id="careerlink"><%= link_to "Careers@canyongda.com", jobs_url %></div>
   <%= image_tag "dashboard-bottom.jpg" %>
