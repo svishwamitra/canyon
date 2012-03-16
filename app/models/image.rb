@@ -6,11 +6,17 @@ class Image < ActiveRecord::Base
   AVATAR_NW = 500
   AVATAR_NH = 400
 
-has_attached_file :picture, :styles => { :large => "#{AVATAR_NW}x#{AVATAR_NH}>",
-                       :small => "#{AVATAR_SW}x#{AVATAR_SH}#" },
-							  :url  => "/assets/images/:id/:style/:basename.:extension",
-							  :path => ":rails_root/public/assets/images/:id/:style/:basename.:extension",
-                       :processors => [:cropper] 
+has_attached_file :picture,
+                  :storage => Rails.env.production? ? :s3 : :filesystem,
+                  :bucket => 'canyon10',
+                  :s3_credentials => {
+                  :access_key_id => ENV['S3_KEY'],
+                  :secret_access_key => ENV['S3_SECRET'] },
+                  #:s3_permissions => :private,
+                  :styles => { :large => "#{AVATAR_NW}x#{AVATAR_NH}>", :small => "#{AVATAR_SW}x#{AVATAR_SH}#" },
+							    :url  => "/assets/images/:id/:style/:basename.:extension",
+							    :path => ":rails_root/public/assets/images/:id/:style/:basename.:extension",
+                  :processors => [:cropper] 
 # ============= Validations for Attachments
 	validates_attachment_presence :picture
 	validates_attachment_size :picture, :less_than => 5.megabytes
@@ -48,7 +54,8 @@ has_attached_file :picture, :styles => { :large => "#{AVATAR_NW}x#{AVATAR_NH}>",
   
   def picture_geometry(style = :original)
     @geometry ||= {}
-    @geometry[style] ||= Paperclip::Geometry.from_file(picture.path(style))
+    path = (picture.options[:storage]==:s3) ? picture.url(style) : picture.path(style)
+    @geometry[style] ||= Paperclip::Geometry.from_file(path)
   end
   
   private

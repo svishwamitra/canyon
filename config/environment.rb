@@ -15,6 +15,7 @@ Rails::Initializer.run do |config|
   # Gems
   #config.gem "capistrano-ext", :lib => "capistrano"
   config.gem "configatron"
+  #config.gem "aws-s3"
   config.gem "paperclip", :source => "http://gemcutter.org/"
  
   # Make Time.zone default to the specified zone, and make Active Record store time values
@@ -34,6 +35,5 @@ Rails::Initializer.run do |config|
     :session_key => '_base_session',
     :secret      => '7389ea9180b15f1495a5e73a69a893311f859ccff1ffd0fa2d7ea25fdf1fa324f280e6ba06e3e5ba612e71298d8fbe7f15fd7da2929c45a9c87fe226d2f77347'
   }
-  
   config.active_record.observers = :user_observer
 end
