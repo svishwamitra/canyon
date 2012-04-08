@@ -45,12 +45,9 @@ body{
 		height:538px;
 		z-index:-5;
 		overflow:hidden;}
-            #site-wrapper #dashboard{
-                background: #287593;
-                width: 910px;
-                height: 538px;}
-            #site-wrapper #dashboard #bottom{width: 100%;}
-            #site-wrapper #dashboard #bottom img{width: 100%;}
+    #site-wrapper #dashboard{background: #287593; width: 910px; height: 538px;}
+    #site-wrapper #dashboard #bottom{width: 100%;}
+    #site-wrapper #dashboard #bottom img{width: 100%;}
 		#site-wrapper #header{
 			height:125px;
 			margin:0;
@@ -79,41 +76,19 @@ body{
 			margin:0;
 			padding:0;
 			overflow:hidden;}
-			#top-navigation{
-				float:right;
-				margin:0;
-				padding:0;
-				z-index:2}
-                        #top-navigation span{color: #be834b; font-size: 18px; margin: 0 3px 0 3px; position: relative; bottom: 3px;}
-				#top-navigation ul{
-					list-style:none;
-					margin:47px 50px 0 0}
-				#top-navigation ul li{
-					display:inline;}
-				#top-navigation ul li a{
-					font-size:11px;
-					color:#fff;
-					z-index:3;
-					/*font-weight:bold*/}
-					#top-navigation ul li a.current{color:#5e93a5}
+			#top-navigation{float:right; margin:0; padding:0; z-index:2}
+        #top-navigation span{color: #be834b; font-size: 18px; margin: 0 8px 0 8px; position: relative; bottom: 3px;}
+				#top-navigation ul{list-style:none; margin:47px 52px 0 0}
+				#top-navigation ul li{display:inline;}
+				#top-navigation ul li a{color:#fff; z-index:3}
+				#top-navigation ul li a.current{color:#5e93a5}
 /* This top-nav is for application layout */
-                        #top-navigation-app{
-				float:right;
-				margin:0;
-				padding:0;
-				z-index:2}
-                        #top-navigation-app span{color: #be834b; font-size: 18px; margin: 0 3px 0 3px; position: relative; bottom: 3px;}
-				#top-navigation-app ul{
-					list-style:none;
-					margin:47px 50px 0 0}
-				#top-navigation-app ul li{
-					display:inline;}
-				#top-navigation-app ul li a{
-					font-size:11px;
-					color:#297493;
-					z-index:3;
-					/*font-weight:bold*/}
-					#top-navigation-app ul li a.current{color:#fff}
+        #top-navigation-app{float:right; margin:0; padding:0;	z-index:2}
+        #top-navigation-app span{color: #be834b; font-size: 18px; margin: 0 8px 0 8px; position: relative; bottom: 3px;}
+				#top-navigation-app ul{list-style:none;	margin:47px 52px 0 0}
+				#top-navigation-app ul li{display:inline;}
+				#top-navigation-app ul li a{color:#297493; z-index:3}
+				#top-navigation-app ul li a.current{color:#fff}
 			#wrapper{
 				width:100%;
 				margin:0;
@@ -144,20 +119,20 @@ body{
 							/*height:35px;
 							line-height:35px;*/
 							text-align:right;}
-                                                #left-content #contact_nav_jobs{float: left; text-align: left; margin: 10px 0 0 50px;}
-                                                #left-content #contact_nav_jobs ul li{text-align: left; height: 35px;}
+            #left-content #contact_nav_jobs{float: left; text-align: left; margin: 10px 0 0 50px;}
+            #left-content #contact_nav_jobs ul li{text-align: left; height: 35px;}
 						#wrapper #left-content #admin ul li{
 							height:21px;
 							line-height:21px}
-                                                #wrapper #left-content #dot{color: #be834b; font-size: 18px; position: relative; bottom: 5px;}
+              #wrapper #left-content #dot{color: #be834b; font-size: 18px; position: relative; bottom: 5px;}
 							#wrapper #left-content ul li a, #wrapper #left-content #admin ul li a{
 								font-size:12px;
 								color:#297493;
-								font-weight:bold}
-                                                        #wrapper #left-content #admin ul li span{font-weight: bold;}
+								/*font-weight:bold*/}
+              #wrapper #left-content #admin ul li span{font-weight: bold;}
 							#wrapper #left-content ul#portfolio_nav li a span,
 							#wrapper #left-content ul#contact_nav li a span{color:#119ae0; font-weight:bold}
-								#wrapper #left-content ul li a.current, #wrapper #left-content #admin ul li a.current{color:#297493}
+								#wrapper #left-content ul li a.current, #wrapper #left-content #admin ul li a.current{color:#297493, font-weight:bold}
 				#wrapper #right-content{
 					float:right;
 					text-align:left;
