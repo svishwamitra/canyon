@@ -113,26 +113,19 @@ body{
 						text-align:right;
 						margin:0 20px 0 0;}
 					#wrapper #left-content ul#contact_nav, #wrapper #left-content #admin ul#contact_nav{margin:0 20px 0 55px;}
-					#wrapper #left-content ul#portfolio_nav, #wrapper #left-content #admin ul#portfolio_nav{
-						text-align:right}
-						#wrapper #left-content ul li{
-							/*height:35px;
-							line-height:35px;*/
-							text-align:right;}
+					#wrapper #left-content ul#portfolio_nav, #wrapper #left-content #admin ul#portfolio_nav{text-align:right}
+					#wrapper #left-content ul li{/*height:35px;	line-height:35px;*/	text-align:right;}
             #left-content #contact_nav_jobs{float: left; text-align: left; margin: 10px 0 0 50px;}
             #left-content #contact_nav_jobs ul li{text-align: left; height: 35px;}
-						#wrapper #left-content #admin ul li{
-							height:21px;
-							line-height:21px}
-              #wrapper #left-content #dot{color: #be834b; font-size: 18px; position: relative; bottom: 5px;}
-							#wrapper #left-content ul li a, #wrapper #left-content #admin ul li a{
-								font-size:12px;
-								color:#297493;
-								/*font-weight:bold*/}
-              #wrapper #left-content #admin ul li span{font-weight: bold;}
-							#wrapper #left-content ul#portfolio_nav li a span,
-							#wrapper #left-content ul#contact_nav li a span{color:#119ae0; font-weight:bold}
-								#wrapper #left-content ul li a.current, #wrapper #left-content #admin ul li a.current{color:#297493, font-weight:bold}
+					#wrapper #left-content #admin ul li{height:21px; line-height:21px}
+          #wrapper #left-content #dot{color: #be834b; font-size: 18px; position: relative; bottom: 5px;}
+					#wrapper #left-content ul li a, #wrapper #left-content #admin ul li a{font-size:12px;	color:#297493; /*font-weight:bold*/}
+          #wrapper #left-content #admin ul li span{font-weight: bold;}
+					#wrapper #left-content ul#portfolio_nav li a span,
+					#wrapper #left-content ul#contact_nav li a span{color:#119ae0; font-weight:bold}
+					#wrapper #left-content #admin ul#portfolio_nav li a.current{font-weight: bold}
+					#wrapper #left-content ul#portfolio_nav li a.current{font-weight: bold}
+					#wrapper #left-content ul li a.current, #wrapper #left-content #admin ul li a.current{color:#297493, font-weight:bold}
 				#wrapper #right-content{
 					float:right;
 					text-align:left;
