@@ -9,7 +9,7 @@
 		      <tr> <td> <%= text_field "contact", "tel_mobile",  :value => "Tel / Mobile", :onfocus => "if (this.value == 'Tel / Mobile') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Tel / Mobile';}"  %> </td> </tr>
 		      <tr> <td> <%= text_field "contact", "email",  :value => "Email", :onfocus => "if (this.value == 'Email') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Email';}"  %> </td> </tr>
 		      <tr> <td> <%= text_area "contact", "enquiry",  :value => "Enquiry", :onfocus => "if (this.value == 'Enquiry') {this.value = '';}", :onblur => "if (this.value == '') {this.value = 'Enquiry';}"  %> </td> </tr>
-                      <tr> <td id="submit" align="right"> <%= image_submit_tag('submit.jpg') %></td> </tr>
+          <tr> <td id="submit" align="right"> <%= image_submit_tag('submit.jpg') %></td> </tr>
 	      </table>
 	    <% end %>
 	  </div>

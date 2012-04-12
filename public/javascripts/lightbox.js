@@ -275,9 +275,9 @@ Lightbox.prototype = {
         var heightCurrent = this.outerImageContainer.getHeight();
 
         // get new width and height
-        var widthNew  = (imgWidth  + LightboxOptions.borderSize * 2);
-        var heightNew = (imgHeight + LightboxOptions.borderSize * 1.5);
-
+        var widthNew  = 530//(imgWidth  + LightboxOptions.borderSize * 2);
+        var heightNew = 440//(imgHeight + LightboxOptions.borderSize * 1.5);
+       
         // scalars based on change from old to new
         var xScale = (widthNew  / widthCurrent)  * 100;
         var yScale = (heightNew / heightCurrent) * 100;
@@ -298,8 +298,8 @@ Lightbox.prototype = {
         }
 
         (function(){
-            this.prevLink.setStyle({ height: imgHeight + 'px' });
-            this.nextLink.setStyle({ height: imgHeight + 'px' });
+            this.prevLink.setStyle({ height: heightNew + 'px' });
+            this.nextLink.setStyle({ height: heightNew + 'px' });
             this.imageDataContainer.setStyle({ width: widthNew + 'px' });
 
             this.showImage();

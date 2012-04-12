@@ -20,7 +20,7 @@ body{
 	a:hover{text-decoration:underline}
 	a img{border:none}
 	.clear{clear:both}
-	#submitbutton input {background: url(../images/submit.png) no-repeat;height:29px; width:64px; line-height:29px; border:none; }
+	#submitbutton input {background: url(../images/common_btn.jpg) no-repeat;height:29px; width:64px; line-height:29px; border:none; }
 	.help{background:#EFF7E2; border:1px solid #95C1AB; margin:0 0 5px 0; padding:2px 0 2px 0}
 	#notice{
 		position:absolute;
